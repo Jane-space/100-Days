@@ -1,0 +1,15 @@
+sacred_word = "apple"
+user_guess = input("Enter a word : ")
+user_guess_count = 0
+user_guess_limit = 3 
+out_of_guesses = False
+while user_guess != sacred_word and not (out_of_guesses):
+    if user_guess_count < user_guess_limit:
+       user_guess = input("wrong guess! pease enter a word: ")
+       user_guess_count +=1
+    else:
+        out_of_guesses = True
+     if out_of_guesses:  
+           print (" out of guesses you lose!")
+     else:
+            print ("You have won!")
